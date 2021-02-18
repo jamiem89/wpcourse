@@ -7,11 +7,7 @@
 
             <h1><?php the_title();?></h1>
 
-            <?php the_content();?>
-
-            <a href="<?php the_permalink();?>">Read more</a>
-
-            <hr>
+            <p><?php the_content();?></p>
 
     <?php }
 ?>
