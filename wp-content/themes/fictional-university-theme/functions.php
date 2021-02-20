@@ -14,6 +14,9 @@ add_action('wp_enqueue_scripts', 'university_files');
 // Enable title tags
 
 function university_features() {
+    register_nav_menu('headerMenu', 'Header Menu');
+    register_nav_menu('footerExploreMenu', 'Footer Explore Menu');
+    register_nav_menu('footerLearnMenu', 'Footer Learn Menu');
     add_theme_support('title-tag');
 }
 
