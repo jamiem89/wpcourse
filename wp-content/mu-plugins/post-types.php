@@ -8,6 +8,12 @@ function custom_post_types() {
         'has_archive' => true,
         'rewrite' => array('slug' => 'events'),
         'menu_icon' => 'dashicons-calendar-alt',
+        'show_in_rest' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+        ),
         'labels' => array(
             'name' => 'Events',
             'add_new_item' => 'Add new event',
