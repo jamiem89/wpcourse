@@ -37,6 +37,10 @@
         echo paginate_links();
     ?>
 
+    <hr class="section-break">
+
+    <p>Looking for <a href="<?php echo site_url('/past-events')?>">past events?</a></p>
+
 </div>
 
 
