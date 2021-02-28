@@ -18,7 +18,21 @@
         <?php
             $homepageEvents = new WP_Query(array(
                 'posts_per_page' => 2,
+                // -1 displays ALL posts that match
+                // 'posts_per_page' => -1,
                 'post_type' => 'event',
+                'order' => 'ASC',
+                'meta_key' => 'event_date',
+                'orderby' => 'meta_value_num',
+                'meta_query' => array(
+                    array(
+                        'key' => 'event_date',
+                        'compare' => '>=',
+                        'value' => date('Ymd'),
+                        'type' => 'numeric'
+                    ),
+                ),
+
             ));
 
             while($homepageEvents->have_posts()) {
