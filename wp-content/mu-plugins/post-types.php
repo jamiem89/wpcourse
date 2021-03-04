@@ -46,6 +46,25 @@ function custom_post_types() {
             'singular_name' => 'Program',
         ),
     ));
+
+    // Professor post type
+
+    register_post_type('professor', array(
+        'public' => true,
+        'menu_icon' => 'dashicons-nametag',
+        'show_in_rest' => true,
+        'supports' => array(
+            'title',
+            'editor'
+        ),
+        'labels' => array(
+            'name' => 'Professors',
+            'add_new_item' => 'Add new professor',
+            'edit_item' => 'Edit professor',
+            'all_items' => 'All professors',
+            'singular_name' => 'Professor',
+        ),
+    ));
 }
 
 add_action('init', 'custom_post_types');
