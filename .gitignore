@@ -17,6 +17,7 @@
 /build/wp-content/advanced-cache.php
 /build/wp-content/wp-cache-config.php
 /build/wp-content/wflogs/
+/build/wp-content/uploads/
 /build/sitemap.xml
 *.log
 /build/wp-content/cache/
