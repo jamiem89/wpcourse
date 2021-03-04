@@ -8,26 +8,26 @@
 # Wordpress ignores
 
 /.htaccess
-*/.htaccess
-*/wp-config.php
-*/wp-content/uploads/
-*/wp-content/blogs.dir/
-*/wp-content/upgrade/
-*/wp-content/backup-db/
-*/wp-content/advanced-cache.php
-*/wp-content/wp-cache-config.php
-*/wp-content/wflogs/
-*/wp-content/uploads/
-*/sitemap.xml
+/.htaccess
+/wp-config.php
+/wp-content/uploads/
+/wp-content/blogs.dir/
+/wp-content/upgrade/
+/wp-content/backup-db/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/wflogs/
+/wp-content/uploads/
+/sitemap.xml
 *.log
-*/wp-content/cache/
-*/wp-content/backups/
+/wp-content/cache/
+/wp-content/backups/
 sitemap.xml
 sitemap.xml.gz
 wp-templates/wp-content/themes/mindmate/.sass-cache/
 .DS_Store
-*/wp-content/plugins/wordfence/tmp/configCache.php
-*/wp-content/wflogs
+/wp-content/plugins/wordfence/tmp/configCache.php
+/wp-content/wflogs
 
 node_modules/
 .env
