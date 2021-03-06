@@ -2,15 +2,10 @@
     get_header();
 ?>
 
-<div class="page-banner">
-    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('images/ocean.jpg');?>);"></div>
-    <div class="page-banner__content container container--narrow">
-        <h1 class="page-banner__title">Past events</h1>
-        <div class="page-banner__intro">
-        <p>Previous events held at the university</p>
-        </div>
-    </div>
-</div>
+<?php pageBanner(array(
+    'title' => 'Past Events',
+    'subtitle' => 'An archve of all our  past events',
+)); ?>
 
 <div class="container container--narrow page-section">
     <?php
